@@ -1,3 +1,4 @@
+/* Some other styles are set to override the existing Bootstrap classes where needed. */
 #main-content {
     display: flex;
     justify-content: space-around;
@@ -12,7 +13,6 @@
 }
 
 .current-city-header {
-    /* background-color: red; */
     display: flex;
     align-items: center;
 }
@@ -34,4 +34,12 @@
 h4 {
     display: block;
     pointer-events: none;
+}
+
+.btn-secondary {
+    margin-bottom: 10px;
+}
+
+#city-form {
+    margin-bottom: 25px;
 }
