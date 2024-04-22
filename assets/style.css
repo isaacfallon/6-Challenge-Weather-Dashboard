@@ -18,7 +18,9 @@
 }
 
 .weather-icons {
-    text-align: center;
+    /* text-align: center; */
+    position: relative;
+    padding-left: 10px;
 }
 .current-city-header h2 {
     float: left;
