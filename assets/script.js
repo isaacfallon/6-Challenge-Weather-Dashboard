@@ -123,7 +123,7 @@ function showCurrentWeather(dataValue) {
           // The icon is created by pulling out the icon code and concatenating it to the 
           // img's source URL to grab the exact one we need. 
           var iconcodeToday = data.weather[0].icon;
-          var iconurlToday = "http://openweathermap.org/img/w/" + iconcodeToday + ".png";
+          var iconurlToday = "https://openweathermap.org/img/w/" + iconcodeToday + ".png";
           $('#wiconToday').attr('src', iconurlToday);
 
           // Temp, wind and humidity data points pulled out and set as text content. 
@@ -154,7 +154,7 @@ function showFiveDayForecast(dataValue) {
           // Then we assign the icon depending on the weather by pulling the icon code from the API call 
           // and concatenate it to the img's source URL to grab the exact one we need. 
           var iconcode1 = data.list[7].weather[0].icon;
-          var iconurl1 = "http://openweathermap.org/img/w/" + iconcode1 + ".png";
+          var iconurl1 = "https://openweathermap.org/img/w/" + iconcode1 + ".png";
           $('#wicon1').attr('src', iconurl1);
 
           // Then we pull out the temp, wind and humidity data from within the API call and set the text content
@@ -169,7 +169,7 @@ function showFiveDayForecast(dataValue) {
           document.getElementById(`day2Date`).textContent = now.add(2, 'day').format('DD/MM/YYYY');
 
           var iconcode2 = data.list[15].weather[0].icon;
-          var iconurl2 = "http://openweathermap.org/img/w/" + iconcode2 + ".png";
+          var iconurl2 = "https://openweathermap.org/img/w/" + iconcode2 + ".png";
           $('#wicon2').attr('src', iconurl2);
  
           document.getElementById(`day2Weather`).textContent = `Temp: ` + data.list[15].main.temp + ` °C`;
@@ -180,7 +180,7 @@ function showFiveDayForecast(dataValue) {
           document.getElementById(`day3Date`).textContent = now.add(3, 'day').format('DD/MM/YYYY');
 
           var iconcode3 = data.list[23].weather[0].icon;
-          var iconurl3 = "http://openweathermap.org/img/w/" + iconcode3 + ".png";
+          var iconurl3 = "https://openweathermap.org/img/w/" + iconcode3 + ".png";
           $('#wicon3').attr('src', iconurl3);
 
           document.getElementById(`day3Weather`).textContent = `Temp: ` + data.list[23].main.temp + ` °C`;
@@ -191,7 +191,7 @@ function showFiveDayForecast(dataValue) {
           document.getElementById(`day4Date`).textContent = now.add(4, 'day').format('DD/MM/YYYY');
 
           var iconcode4 = data.list[31].weather[0].icon;
-          var iconurl4 = "http://openweathermap.org/img/w/" + iconcode4 + ".png";
+          var iconurl4 = "https://openweathermap.org/img/w/" + iconcode4 + ".png";
           $('#wicon4').attr('src', iconurl4);
 
           document.getElementById(`day4Weather`).textContent = `Temp: ` + data.list[31].main.temp + ` °C`;
@@ -202,7 +202,7 @@ function showFiveDayForecast(dataValue) {
           document.getElementById(`day5Date`).textContent = now.add(5, 'day').format('DD/MM/YYYY');
 
           var iconcode5 = data.list[39].weather[0].icon;
-          var iconurl5 = "http://openweathermap.org/img/w/" + iconcode5 + ".png";
+          var iconurl5 = "https://openweathermap.org/img/w/" + iconcode5 + ".png";
           $('#wicon5').attr('src', iconurl5);
 
           document.getElementById(`day5Weather`).textContent = `Temp: ` + data.list[39].main.temp + ` °C`;
